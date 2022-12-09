@@ -20,5 +20,9 @@
     @click="afficherimage=null"
     @keyup.escape.window="afficherimage=null">
     <figure><img :src="afficherimage" alt="image 237... un chiot"></figure>
-        
-</div>
+    </div>
+    <img src="https://picsum.photos/id/236/40/60" alt="miniature chiot"
+    @click="afficherimage='https://picsum.photos/id/236/200/300'">
+    <img src="https://picsum.photos/id/237/40/60" alt="miniature chiot"
+    @click="afficherimage = 'https://picsum.photos/id/237/200/300'">
+
