@@ -15,6 +15,10 @@
     }">
     <h1>Galerie</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellat quod fugiat, impedit atque maiores saepe numquam vitae architecto. Maiores sint commodi nulla iste quaerat facere velit id inventore eum?</p>
-    <div class="overlay">
-        <figure><img :src="afficherimage" alt="image 237... un chiot"></figure>
-    </div>
+    <div class="overlay" 
+    x-show="afficherimage" 
+    @click="afficherimage=null"
+    @keyup.escape.window="afficherimage=null">
+    <figure><img :src="afficherimage" alt="image 237... un chiot"></figure>
+        
+</div>
