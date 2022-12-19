@@ -6,7 +6,7 @@
 <body>
   <h1>JSON</h1>
   <ul x-data="{
-  données :[
+  donnees :[
 {
   Prénom: 'Lisa',
   Nom: 'Cingolani'
@@ -16,7 +16,7 @@
   Projet: 'Mind_Uploading.exe'
 }
 ]}">
-    <template x-for="obj in données">
+    <template x-for="obj in donnees">
       <li>
         <span x-text="obj.Prénom">Prénom</span>
         <span x-text="obj.Nom">Nom</span>
@@ -26,15 +26,15 @@
     </template>
   </ul>
   </div>
-<ul x-data="{
-        async données() {
-            const données = await fetch('test.json');
-            return await données.json();
+  <ul x-data="{
+        async donnees() {
+            const donnees = await fetch('test.json');
+            return await donnees.json();
         }
-      }
-      
-      </ul>
+  }">
+  </ul>
 </body>
+
 </html>
 
 </body>
